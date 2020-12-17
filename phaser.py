@@ -23,7 +23,7 @@ def get_phase():
     return [phase, image_title, description]
 
 def c_main(stdscr, phase, images) -> int:
-    curses.init_pair(1, curses.COLOR_CYAN, curses.COLOR_WHITE)
+    curses.init_pair(1, curses.COLOR_WHITE, curses.COLOR_BLACK)
     stdscr.bkgd(' ', curses.color_pair(1) | curses.A_BOLD)
     phase, image_title, description = phase
     image = images[image_title]
